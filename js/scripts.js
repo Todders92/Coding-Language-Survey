@@ -25,7 +25,7 @@ $(document).ready(function() {
     console.log("quesion 8 value: " + q8);
     console.log("quesion 9 value: " + q9);
     console.log("quesion 10 value: " + q10);
-    
+    //for checking if radio buttons return proper values
 
     if (score >= 45) {
       $(".ruby").show();

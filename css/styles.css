@@ -19,3 +19,8 @@
 .error {
   display: none;
 }
+body {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(199,77,22,1) 43%, rgba(255,229,0,1) 100%);
+}
+  
