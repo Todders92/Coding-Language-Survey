@@ -4,27 +4,27 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var q1 = parseInt($("input:radio[name=bear]:checked").val());
-    var q2 = parseInt($("input:radio[name=problem]:checked").val());
-    var q3 = parseInt($("input:radio[name=page]:checked").val());
-    var q4 = parseInt($("input:radio[name=day]:checked").val());
-    var q5 = parseInt($("input:radio[name=personality]:checked").val());
-    var q6 = parseInt($("input:radio[name=database]:checked").val());
-    var q7 = parseInt($("input:radio[name=design]:checked").val());
-    var q8 = parseInt($("input:radio[name=experience]:checked").val());
-    var q9 = parseInt($("input:radio[name=enjoy]:checked").val());
-    var q10 = parseInt($("input:radio[name=helpful]:checked").val());
-    var score = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10
-    console.log("quesion 1 value: " + q1);
-    console.log("quesion 2 value: " + q2);
-    console.log("quesion 3 value: " + q3);
-    console.log("quesion 4 value: " + q4);
-    console.log("quesion 5 value: " + q5);
-    console.log("quesion 6 value: " + q6);
-    console.log("quesion 7 value: " + q7);
-    console.log("quesion 8 value: " + q8);
-    console.log("quesion 9 value: " + q9);
-    console.log("quesion 10 value: " + q10);
+    var question1 = parseInt($("input:radio[name=bear]:checked").val());
+    var question2 = parseInt($("input:radio[name=problem]:checked").val());
+    var question3 = parseInt($("input:radio[name=page]:checked").val());
+    var question4 = parseInt($("input:radio[name=day]:checked").val());
+    var question5 = parseInt($("input:radio[name=personality]:checked").val());
+    var question6 = parseInt($("input:radio[name=database]:checked").val());
+    var question7 = parseInt($("input:radio[name=design]:checked").val());
+    var question8 = parseInt($("input:radio[name=experience]:checked").val());
+    var question9 = parseInt($("input:radio[name=enjoy]:checked").val());
+    var question10 = parseInt($("input:radio[name=helpful]:checked").val());
+    var score = question1 + question2 + question3 + question4 + question5 + question6 + question7 + question8 + question9 +question10
+    console.log("quesion 1 value: " + question1);
+    console.log("quesion 2 value: " + question2);
+    console.log("quesion 3 value: " + question3);
+    console.log("quesion 4 value: " + question4);
+    console.log("quesion 5 value: " + question5);
+    console.log("quesion 6 value: " + question6);
+    console.log("quesion 7 value: " + question7);
+    console.log("quesion 8 value: " + question8);
+    console.log("quesion 9 value: " + question9);
+    console.log("quesion 10 value: " + question10);
     //for checking if radio buttons return proper values
 
     if (score >= 45) {
