@@ -9,11 +9,11 @@ $(document).ready(function() {
     var q3 = parseInt($("input:radio[name=page]:checked").val());
     var q4 = parseInt($("input:radio[name=day]:checked").val());
     var q5 = parseInt($("input:radio[name=personality]:checked").val());
-    var q6 = parseInt($("input:radio[name=problem]:checked").val());
-    var q7 = parseInt($("input:radio[name=problem]:checked").val());
-    var q8 = parseInt($("input:radio[name=problem]:checked").val());
-    var q9 = parseInt($("input:radio[name=problem]:checked").val());
-    var q10 = parseInt($("input:radio[name=problem]:checked").val());
+    var q6 = parseInt($("input:radio[name=database]:checked").val());
+    var q7 = parseInt($("input:radio[name=design]:checked").val());
+    var q8 = parseInt($("input:radio[name=experience]:checked").val());
+    var q9 = parseInt($("input:radio[name=enjoy]:checked").val());
+    var q10 = parseInt($("input:radio[name=helpful]:checked").val());
     var score = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10
     console.log("quesion 1 value: " + q1);
     console.log("quesion 2 value: " + q2);
