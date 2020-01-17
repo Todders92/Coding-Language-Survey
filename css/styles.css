@@ -25,3 +25,11 @@ body {
   background: -moz-linear-gradient(bottom, #EFD0D0, #D44242);
   background: linear-gradient(to top, #EFD0D0, #D44242);
 }
+.results {
+  display: none;
+}
+#result {
+  font-weight: bold;
+  font-family: Tahoma;
+  font-style: italic;
+}

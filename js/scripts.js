@@ -4,6 +4,7 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
+    var name = $("input#name").val();
     var question1 = parseInt($("input:radio[name=bear]:checked").val());
     var question2 = parseInt($("input:radio[name=problem]:checked").val());
     var question3 = parseInt($("input:radio[name=page]:checked").val());
@@ -28,6 +29,7 @@ $(document).ready(function() {
     //for checking if radio buttons return proper values
 
     if (score >= 45) {
+      var answer = "C#"
       $(".ruby").hide();
       $(".csharp").show();
       $(".rust").hide();
@@ -36,6 +38,7 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 45 && score >= 38) {
+      var answer = "Rust"
       $(".ruby").hide();
       $(".csharp").hide();
       $(".rust").show();
@@ -44,6 +47,7 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 38 && score >= 31) {
+      var answer = "JavaScript"
       $(".ruby").hide();
       $(".csharp").hide();
       $(".rust").hide();
@@ -52,6 +56,7 @@ $(document).ready(function() {
       $(".javascript").show();
       $(".error").hide();
     } else if (score < 31 && score >= 24) {
+      var answer = "React"
       $(".ruby").hide();
       $(".csharp").hide();
       $(".rust").hide();
@@ -60,6 +65,7 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 24 && score >= 17) {
+      var answer = "Ruby"
       $(".ruby").show();
       $(".csharp").hide();
       $(".rust").hide();
@@ -68,6 +74,7 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 17 && score >= 10) {
+      var answer = "Python"
       $(".ruby").hide();
       $(".csharp").hide();
       $(".rust").hide();
@@ -84,5 +91,8 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").show();
     } 
+    $(".name").text(name);
+    $(".answer").text(answer);
+    $(".results").show();
   });
 });

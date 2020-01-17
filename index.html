@@ -17,13 +17,13 @@
         <div class="card-header">
           <div class="card-body-center">
             <label for="name"><strong><em>What is your name?</em></strong></label><br>
-            <input type="text">
+            <input type="text" id="name">
           </div>
         </div>
       </div><br>
       
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 1</h3>
         </div>
         <div class="card-body">
@@ -50,7 +50,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 2</h3>
         </div>
         <div class="card-body">
@@ -69,7 +69,7 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="problem" value="3">
+              <input type="radio" name="problem" value="0">
               Not sure.
             </label>
           </div>
@@ -77,7 +77,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 3</h3>
         </div>
         <div class="card-body">
@@ -90,13 +90,13 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="page" value="3">
+              <input type="radio" name="page" value="5">
               How it functions.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="page" value="5">
+              <input type="radio" name="page" value="3">
               Both are equally important.
             </label>
           </div>
@@ -104,7 +104,7 @@
       </div><br>
       
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 4</h3>
         </div>
         <div class="card-body">
@@ -131,11 +131,11 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 5</h3>
         </div>
         <div class="card-body">
-          <h5>Would you call yourself more of an extrovert or more of an introvert</h5>
+          <h5>Would you call yourself more of an extrovert or more of an introvert?</h5>
           <div class="radio">
             <label>
               <input type="radio" name="personality" value="5" checked>
@@ -158,7 +158,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 6</h3>
         </div>
         <div class="card-body">
@@ -185,7 +185,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 7</h3>
         </div>
         <div class="card-body">
@@ -212,7 +212,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 8</h3>
         </div>
         <div class="card-body">
@@ -239,7 +239,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 9</h3>
         </div>
         <div class="card-body">
@@ -272,7 +272,7 @@
       </div><br>
 
       <div class="card">
-        <div class="card-header bg-danger">
+        <div class="card-header bg-danger text-center">
           <h3>Question 10</h3>
         </div>
         <div class="card-body">
@@ -300,35 +300,110 @@
 
       <button type="submit" class="btn btn-info">Submit</button><br><br>
     </form>
+    <div class="results">
+      <div class="card">
+        <div class="card-body text-center">
+          <p id="result">Thank you for completeing the survey <span class="name"></span>! the coding language that best suits you is <span class="answer"></span>! Below is a brief description of <span class="answer"></span> and some useful links</p>
+        </div>  
+      </div>
+    </div><br>
 
     <div class="ruby">
-      <h1>ruby</h1>
-      <p>Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection.</p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>Ruby</h1>
+        </div>
+        <div class="card-body">
+          <p>Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection.</p>
+          <p><a href="https://www.ruby-lang.org/en/">click here</a> to learn more about Ruby</p>
+        </div>  
+      </div>
     </div>
+
     <div class="csharp">
-      <h1>C#</h1>
-      <p>C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.</p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>C#</h1>
+        </div>
+        <div class="card-body">
+          <p>C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.</p>
+          <p><a href="#">click here</a> to learn more about</p>
+        </div>  
+      </div>
     </div>
+
     <div class="rust">
-      <h1>rust</h1>
-      <p>Rust is a multi-paradigm system programming language focused on safety, especially safe concurrency. Rust is syntactically similar to C++, but is designed to provide better memory safety while maintaining high performance.</p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>Rust</h1>
+        </div>
+        <div class="card-body">
+          <p>Rust is a multi-paradigm system programming language focused on safety, especially safe concurrency. Rust is syntactically similar to C++, but is designed to provide better memory safety while maintaining high performance.</p>
+          <p><a href="#">click here</a> to learn more about</p>
+        </div>  
+      </div>
     </div>
+
     <div class="react">
-      <h1>react</h1>
-      <p>React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>React</h1>
+        </div>
+        <div class="card-body">
+          <p>React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+          <p><a href="#">click here</a> to learn more about</p>
+        </div>  
+      </div>
     </div>
+
     <div class="python">
-      <h1>python</h1>
-      <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>Python</h1>
+        </div>
+        <div class="card-body">
+          <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+          <p><a href="#">click here</a> to learn more about</p>
+        </div> 
     </div>
+
     <div class="javascript">
-      <h1>javascript</h1>
-      <p>JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. </p>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>javascript</h1>
+        </div>
+        <div class="card-body">
+          <p>JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+          <p><a href="#">click here</a> to learn more about</p>
+        </div>  
+      </div>
     </div>
+
     <div class="error">
-      <H2>something went wrong</H2>
-      <h6>we don't know how you did it, but something broke. Try refreshing the page manually or <a href="index.html">click here</a>to reload to page.</h6>
+      <div class="card">
+        <div class="card-header bg-danger text-center">
+          <h1>Oops; Something went wrong</h1>
+        </div>
+        <div class="card-body">
+          <h6>we don't know how you did it, but something broke. Try refreshing the page manually or <a href="index.html">click here</a>to reload to page.</h6>
+        </div>  
+      </div>
+      <!-- <H2>something went wrong</H2>
+       -->
     </div>
+
   </div>
 </body>
 </html>
+
+
+
+<!-- <div class="card">
+  <div class="card-header bg-danger text-center">
+    <h1></h1>
+  </div>
+  <div class="card-body">
+    <p></p>
+    <p><a href="#">click here</a> to learn more about</p>
+  </div>  
+</div> -->
