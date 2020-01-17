@@ -28,14 +28,6 @@ $(document).ready(function() {
     //for checking if radio buttons return proper values
 
     if (score >= 45) {
-      $(".ruby").show();
-      $(".csharp").hide();
-      $(".rust").hide();
-      $(".react").hide();
-      $(".python").hide();
-      $(".javascript").hide();
-      $(".error").hide();
-    } else if (score < 45 && score >= 38) {
       $(".ruby").hide();
       $(".csharp").show();
       $(".rust").hide();
@@ -43,13 +35,21 @@ $(document).ready(function() {
       $(".python").hide();
       $(".javascript").hide();
       $(".error").hide();
-    } else if (score < 38 && score >= 31) {
+    } else if (score < 45 && score >= 38) {
       $(".ruby").hide();
       $(".csharp").hide();
       $(".rust").show();
       $(".react").hide();
       $(".python").hide();
       $(".javascript").hide();
+      $(".error").hide();
+    } else if (score < 38 && score >= 31) {
+      $(".ruby").hide();
+      $(".csharp").hide();
+      $(".rust").hide();
+      $(".react").hide();
+      $(".python").hide();
+      $(".javascript").show();
       $(".error").hide();
     } else if (score < 31 && score >= 24) {
       $(".ruby").hide();
@@ -60,11 +60,11 @@ $(document).ready(function() {
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 24 && score >= 17) {
-      $(".ruby").hide();
+      $(".ruby").show();
       $(".csharp").hide();
       $(".rust").hide();
       $(".react").hide();
-      $(".python").show();
+      $(".python").hide();
       $(".javascript").hide();
       $(".error").hide();
     } else if (score < 17 && score >= 10) {
@@ -72,8 +72,8 @@ $(document).ready(function() {
       $(".csharp").hide();
       $(".rust").hide();
       $(".react").hide();
-      $(".python").hide();
-      $(".javascript").show();
+      $(".python").show();
+      $(".javascript").hide();
       $(".error").hide();
     } else if (score < 10) {
       $(".ruby").hide();
