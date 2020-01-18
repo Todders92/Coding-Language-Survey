@@ -23,7 +23,7 @@ _Gradient color shifts after form is submitted_
 
 ## Support and contact details
 
-_any questions/suggestions? Email me at cod4247@yahoo.com_
+_Any questions/suggestions? Email me at cod4247@yahoo.com_
 
 ## Technologies Used
 
