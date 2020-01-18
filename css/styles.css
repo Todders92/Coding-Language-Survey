@@ -28,8 +28,8 @@ body {
 .results {
   display: none;
 }
-#result {
-  font-weight: bold;
-  font-family: Tahoma;
+
+p {
   font-style: italic;
+  font font-family: Tahoma;
 }
